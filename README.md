@@ -13,3 +13,15 @@ The goal of this project was to build a system that can identify misogynous twee
      Accuracy on the test set is 77%.
      
 Accuracy of the final model on the test data is 81.75%. So, a bag of words and emoji approach was the most efficient. But the neural network with word-level embedding looks promising considering that it obtained very reasonable result despite the limited size of the training dataset.
+
+The folder Models contains all trained models, including Count Vectorizer for the BOW-based model and Tokenizer for the deep learning model. Jupyter notebooks show how those models have been obtained step by step. The Project Demo notebook demonstrates how the final ensemble model makes predictions for the test set of 400 tweets, for individual tweets, and for preloaded random tweets.
+The project has the following dependencies, which need to be installed before running notebooks:
+1. Pandas (https://pandas.pydata.org/)
+2. Numpy (https://www.scipy.org/scipylib/download.html)
+3. Sklearn (https://scikit-learn.org/stable/install.html)
+4. Keras (https://keras.io/#installation)
+5. Gensim (https://radimrehurek.com/gensim/install.html), including gensim-corpora
+6. Nltk (https://www.nltk.org/install.html), including 'wordnet' and 'stopwords' from nltk.corpus 
+7. Liwc (https://github.com/chbrown/liwc-python)
+8. Emoji (https://pypi.org/project/emoji/)
+9. Word vectors wiki.en that can be downloaded from https://fasttext.cc/docs/en/pretrained-vectors.html and need to be saved to the Data folder
