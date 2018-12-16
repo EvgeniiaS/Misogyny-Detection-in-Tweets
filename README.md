@@ -3,7 +3,7 @@ Despite all efforts towards gender equality in the last hundred years, we still 
 
 The goal of this project was to build a system that can identify misogynous tweets with high accuracy. For training, I used the English tweet corpus from the shared task on Automatic Misogyny Classiﬁcation at IberEval 2018 (https://amiibereval2018.wordpress.com/). The corpus is composed of 3,997 tweets manually labeled by human annotators as either misogynous or non-misogynous. The final model is an ensemble of the following classifiers: 
 
-1. An ensemble of Linear Regression, Support Vector Machine (SVM), Random Forest, Gradient Boosting, and Stochastic Gradient Descent models, trained on tweets represented as a bag of words and emoji. The accuracy of predictions on the test set is 82%. 
+1. An ensemble of Logistic Regression, Support Vector Machine (SVM), Random Forest, Gradient Boosting, and Stochastic Gradient Descent models, trained on tweets represented as a bag of words and emoji. The accuracy of predictions on the test set is 82%. 
 2. A recurrent neural network with embedding, based on pretrained 300-dimensional word vectors, and 2 LSTM layers. The accuracy of predictions on the test set is 78%. 
 3. An ensemble of Random Forest and Gradient Boosting models, trained on the following features:
      - Presence of words from a swearing list (https://www.noswearing.com/dictionary/z). 
