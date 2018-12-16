@@ -6,10 +6,10 @@ The goal of this project was to build a system that can identify misogynous twee
 1. An ensemble of Linear Regression, Support Vector Machine (SVM), Random Forest, Gradient Boosting, and Stochastic Gradient Descent models, trained on tweets represented as a bag of words and emoji. The accuracy on the test set is 82%. 
 2. A recurrent neural network with embedding, based on pretrained 300-dimensional word vectors, and 2 LSTM layers. The accuracy on the test set is 78%. 
 3. An ensemble of Random Forest and Gradient Boosting models, trained on the following features:
-     i. Presence of words from a swearing list (https://www.noswearing.com/dictionary/z). 
-     ii. LIWC features - reading a tweet and counts words that reflect different emotions, thinking styles, social concerns, parts of speech (http://liwc.wpengine.com/how-it-works/).  
-     iii. Presence of links, @-mentions, #. 
-     iv. Extracting eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive) using NRC emotion lexicon (https://saifmohammad.com/WebPages/NRCEmotion-Lexicon.htm). 
+     - Presence of words from a swearing list (https://www.noswearing.com/dictionary/z). 
+     - LIWC features - reading a tweet and counts words that reflect different emotions, thinking styles, social concerns, parts of speech (http://liwc.wpengine.com/how-it-works/).  
+     - Presence of links, @-mentions, #. 
+     - Extracting eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive) using NRC emotion lexicon (https://saifmohammad.com/WebPages/NRCEmotion-Lexicon.htm). 
      Accuracy on the test set is 77%.
      
 Accuracy of the final model on the test data is 81.75%. So, a bag of words and emoji approach was the most efficient. But the neural network with word-level embedding looks promising considering that it obtained very reasonable result despite the limited size of the training dataset.
